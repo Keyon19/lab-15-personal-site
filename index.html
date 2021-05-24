@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1>Hi, I'm Keyon Gray</h1>
+        <h5>This is my Website</h5>
+      </div>
+    </div>
+    <div id="navbar">
+      <a href="index.html">Home</a>
+      <a href="aboutme.html">About Me</a>
+      <a href="myportfolio.html">Portfolio</a>
+      <a href="contacts.html">Contacts</a>
+    </div>
+    <div class = "stuff" id = "first"><h2>Welcome to my website. ENJOY!</h2>
+    </div>
+    <br>
+    <script type="text/javascript">
+
+    var context;
+    var x=300;
+    var y=200;
+    var dx=5;
+    var dy=5;
+
+    function init()
+    {
+      context= myCanvas.getContext('2d');
+      setInterval(draw,10);
+    }
+
+    function draw()
+    {
+      context.clearRect(0,0, 550,550);
+      context.beginPath();
+      context.fillStyle="#000000";
+      context.arc(x,y,20,0,Math.PI*2,true);
+      context.closePath();
+      context.fill();
+    if( x<0 || x>550) dx=-dx;
+    if( y<0 || y>550) dy=-dy;
+    x+=dx;
+    y+=dy;
+    }
+    </script>
+    <body onLoad="init();">
+      <canvas id="myCanvas" width="550" height="550" style="border:1px solid #000000;">
+</canvas>
+<link rel="BouncingCircle">
+  <script src="navbar.v01.js"></script>
+  </body>
+</html>
