@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-image {
-  background-image: url("bannerv01.jpg");
+  background-image: url("bannerv01.jpg"); /* https://www.freepik.com/free-vector/abstract-background-with-green-lines_6195965.htm */
   height: 30%;
   background-position: center;
   background-repeat: no-repeat;
